@@ -52,4 +52,15 @@ const close = (e) => {
   modal.classList.toggle('new-book-form');
 }
 
-
+const addBookToLibrary = (e) => {
+  if (e.target.id != 'form-submit') return;
+  e.preventDefault();
+  const form = document.getElementById('book-form');
+  const title = form.elements[0].value;
+  const author = form.elements[1].value;
+  const genre = form.elements[2].value;
+  const status = form.elements[3].value;
+  let book = new Book(title, author, genre, status);
+  books.push(book);
+  setBooks();
+}
