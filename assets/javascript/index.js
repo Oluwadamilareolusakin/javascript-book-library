@@ -45,4 +45,11 @@ const openFormModal = (e) => {
   bookModal.classList.toggle('new-book-form');
 }
 
+const close = (e) => {
+  if (e.target.id == 'form-close-button'){
+    let modal = document.querySelector('#book-modal');
+  }
+  modal.classList.toggle('new-book-form');
+}
+
 
