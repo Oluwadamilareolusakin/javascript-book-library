@@ -37,3 +37,12 @@ const setBooks = () =>{
   render(allBooks, node);
 }
 
+const openFormModal = (e) => {
+  if (e.target.id != 'new-book-btn') return;
+  const bookModal = document.querySelector('#book-modal');
+  bookModal.classList.toggle('open-modal');
+  bookModal.classList.toggle('book-form');
+  bookModal.classList.toggle('new-book-form');
+}
+
+
