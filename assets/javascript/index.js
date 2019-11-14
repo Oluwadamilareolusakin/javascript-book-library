@@ -25,4 +25,10 @@ const fetchBooks = () =>{
   return fetchedBooks;
 }
 
+const render = (template, node) => {
+  if (!node) return;
+  node.innerHTML = template;
+  console.log(node);
+}
+
 

@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.new-book-form {
+  display: none; }
+  .new-book-form form {
+    display: flex;
+    flex-flow: column nowrap; }
+
+.book-form {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: black; }
+
+.open-modal {
+  display: block; }
+
+/*# sourceMappingURL=index.css.map */
