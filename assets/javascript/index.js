@@ -31,4 +31,9 @@ const render = (template, node) => {
   console.log(node);
 }
 
+const setBooks = () =>{
+  const allBooks = fetchBooks();
+  const node = document.querySelector('.books');
+  render(allBooks, node);
+}
 
