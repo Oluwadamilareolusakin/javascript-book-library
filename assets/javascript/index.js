@@ -68,11 +68,9 @@ const openFormModal = (e) => {
 
 const closeModal = (e) => {
   e.preventDefault();
-  if (e.target.id == 'close'){
-    const modal = document.querySelector('#book-modal');
-    modal.classList.toggle('book-form');
-    modal.classList.toggle('closed-book-form');
-  }
+  const modal = document.querySelector('#book-modal');
+  modal.classList.toggle('book-form');
+  modal.classList.toggle('closed-book-form');
 }
 
 const addBookToLibrary = (e) => {
@@ -87,6 +85,7 @@ const addBookToLibrary = (e) => {
   books.push(book);
   setBooks();
   book.id = books.indexOf(book);
+  closeModal(e);
 }
 
 const deleteBooks = (id) => {
