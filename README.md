@@ -1,7 +1,7 @@
 # Javascript book library
 A simple book library written in ES6
 
-![screenshot](img/screenshot.png)
+![screenshot](assets/images/Screenshot%20from%202019-11-18%2014-09-29.png)
 
 # What it does
 It acts as a personal library to keep track of your reading interests. You can add a book to the library, one you are reading for instance and set a status to help you remember whether or not it has been read.
